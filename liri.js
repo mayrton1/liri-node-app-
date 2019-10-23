@@ -1,3 +1,4 @@
+var axios = require("axios");
 require("dotenv").config();
 var fs = require("fs");
 var keys = require("./keys.js");
@@ -7,7 +8,7 @@ var spotify = new Spotify(keys.spotify);
 
 
 var action = process.argv[2];
-var parameter = process.argv.slice(3).join(" ");
+var parameter = process.argv[3];
 
 
 
@@ -43,12 +44,12 @@ function bandsInTown(parameter){
 
 if (action === 'concert-this')
 {
-	var movieName="";
+	var bandName= parameter;
 	for (var i = 3; i < process.argv.length; i++)
 	{
-		movieName+=process.argv[i];
+		bandName+=process.argv[i];
 	}
-	console.log(movieName);
+	console.log(bandName);
 }
 else
 {
@@ -57,14 +58,18 @@ else
 
 
 
-var queryUrl = "https://rest.bandsintown.com/artists/"+movieName+"/events?app_id=codingbootcamp";
+ var queryUrl = "https://rest.bandsintown.com/artists/"+bandName+"/events?app_id=codingbootcamp";
 
+ axios.get(queryUrl).then(function (response) {
+  // handle success
+  console.log(response);
+});
 
 request(queryUrl, function(error, response, body) {
 
   if (!error && response.statusCode === 200) {
 
-    var JS = JSON.parse(body);
+    // var JS = JSON.parse(body);
     for (i = 0; i < JS.length; i++)
     {
       var dTime = JS[i].datetime;
