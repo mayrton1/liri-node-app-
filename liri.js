@@ -73,5 +73,6 @@ function concertThis(artist) {
     function (response) {
       console.log("_Upcoming Events_");
       console.log("Artist: " + artist + "\nVenue: " + response.data[0].venue.name + "\nLocation: " + response.data[0].venue.country + "\nDate: " + response.data[0].datatime);
+      console.log(moment(response.data[0].datetime).format("MM/DD/YYYY"));
     });
 }
