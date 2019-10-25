@@ -23,7 +23,7 @@ You'll need keys for these APIs
 - Spotify API
 - OMDB API
 
-Matthew Ayrton, University of Utah Coding Bootcamp (https://github.com/mayrton1/liri-node-app-)
+Matthew Ayrton, University of Utah Coding Bootcamp (https://mayrton1.github.io/liri-node-app-/)
 
 I created this program from start to finish using the technologies (liste above)
 
