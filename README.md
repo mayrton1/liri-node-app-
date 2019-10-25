@@ -1,6 +1,6 @@
 *Uses for LIRI Bot*
 
-For this assignment, I created a LIRI. The LIRIbot operates like the iPhone’s SIRI operating system/app. Unlike Siri though, which is a Speech Recognition Interface. This LIRI-bot acts as a Language Recognition Interface. Also, LIRI acts as a command line node app that accepts parameters and retursn specific data back to the user.
+For this assignment, I created a LIRI. The LIRIbot operates like the iPhone’s SIRI operating system/app. Unlike Siri though, which is a Speech Recognition Interface. This LIRI-bot acts as a Language Recognition Interface. Also, LIRI acts as a command line node app that accepts parameters and returns specific data back to the user.
 
 You can use the LIRI bot to search for:
 - upcoming concerts using the command: concert-this "insert artist you want to search"
@@ -23,7 +23,7 @@ You'll need keys for these APIs
 - Spotify API
 - OMDB API
 
-Matthw Ayrton, University of Utah Coding Bootcamp (https://github.com/mayrton1/liri-node-app-)
+Matthew Ayrton, University of Utah Coding Bootcamp (https://github.com/mayrton1/liri-node-app-)
 
 I created this program from start to finish using the technologies (liste above)
 
